@@ -2759,8 +2759,7 @@
                 "[PORTFÓLIO][BARRA] globoid-js carregado com sucesso: "
               );
           } catch (t) {
-            e.updateButton(null),
-              console.error("[PORTFÓLIO][BARRA] Erro ao carregar globoid-js");
+            e.updateButton(null);
           }
         });
       }
@@ -3094,14 +3093,7 @@
                     "[PORTFÓLIO][BARRA] Configuração do produto vazia!"
                   );
             } catch (e) {
-              "AbortError" === e.name
-                ? console.error(
-                    "[PORTFÓLIO][BARRA] Tempo limite da request excedido"
-                  )
-                : console.error(
-                    "[PORTFÓLIO][BARRA] Erro na request do JSON do produto: ",
-                    e
-                  );
+              "AbortError" === e.name;
             }
             return t;
           }),
